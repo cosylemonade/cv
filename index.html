@@ -1,5 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<style>
+  .dates {
+    white-space: nowrap;
+    }
+  .work {
+    padding-left: 25px;
+  }
+  .dates, .work {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #skillsrightcol {
+    margin-left: 25px;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
 
 <head>
   <meta charset="utf-8">
@@ -52,33 +105,61 @@
     </thead>
     <tbody>
       <tr>
-        <td>2019-Present</td>
-        <td>Contractor</td>
+        <td class="dates">2019-Present</td>
+        <td class="work">Contract IT Specialist/Consultant for small business and residential clients.</td>
       </tr>
       <tr>
-        <td>2013-2019</td>
-        <td>Database Administrator at WPX Energy</td>
+        <td class="dates">2012-2019</td>
+        <td class="work">Database Administrator for local energy company</td>
       </tr>
+      <tr>
+        <td class="dates">2010-2012</td>
+        <td class="work">Contract IT Specialist for a number of projects including large scale infrastructure migrations, <br />
+            temporary substitutes, and long term engagements for large organization information security teams.
+        </td>
+      </tr>
+      <tr>
+        <td class="dates">2007-2009</td>
+        <td class="work">Systems Administrator for local manufacturing company.</td>
+      </tr>
+      <tr>
     </tbody>
   </table>
   <h3>Skills</h3>
   <table>
     <tr>
-      <td>Windows Administration</td>
+      <td class="tooltip">System Administration
+        <span class="tooltiptext">10+ years of Network and infrastructure administration experience<br />
+		                              Windows server administration<br />
+		                              Network Management<br />
+			                            DNS, DHCP, Firewall Management, QoS, VPN<br />
+                                	Active Directory<br />
+	                                Backup Planning and Disaster Recovery
+        </span>
+      </td>
       <td>⭐⭐⭐⭐⭐</td>
-      <td>SQL Server Administration</td>
+      <td class="tooltip" id="skillsrightcol">SQL Server Administration
+        <span class="tooltiptext">7+ years as DBA III for a midsized energy company<br />
+                                  hosting approximately 100 servers and 500+ database instances <br />
+                                  including Microsoft SQL Server, Sybase, and Oracle <br />
+	                                Data warehouse management including ETL using Microsoft SQL Server Integration Services<br />
+	                                Reporting with Microsoft SQL Server Reporting Services<br />
+	                                Managed performance tuning, backup schemes, DB customization, stored procedures,<br />
+                                  scheduled jobs, alerts, and maintenance.
+        </span>
+      </td>
       <td>⭐⭐⭐⭐⭐</td>
     </tr>
     <tr>
-      <td>Active Directory</td>
+      <td class="tooltip">Domain Management</td>
       <td>⭐⭐⭐⭐⭐</td>
-      <td>Scripting/Automation</td>
+      <td class="tooltip" id="skillsrightcol">Scripting/Automation</td>
       <td>⭐⭐⭐⭐</td>
     </tr>
     <tr>
-      <td>Web Development</td>
-      <td>⭐⭐⭐</td>
-      <td>Integration Development</td>
+      <td class="tooltip">Integration Development</td>
+      <td>⭐⭐⭐⭐</td>
+      <td class="tooltip" id="skillsrightcol">Web Development</td>
       <td>⭐⭐⭐</td>
     </tr>
   </table>
