@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <style>
+  body {
+	background-color: #666;
+	color: #CCC
+	}
   .dates {
     white-space: nowrap;
     }
@@ -16,7 +20,22 @@
     display: inline-block;
     border-bottom: 1px dotted black;
   }
-
+  #horizrle1 {
+	height: 30px;
+	width: 100%;
+	background-image: url("./images/horizontal-line-design3.png");
+	background-repeat: no-repeat;
+	background-size: 50% 50px;
+	background-position: center;
+	}
+  #horizrle2 {
+	height: 20px;
+	width: 100%;
+	background-image: url("./images/horizontal-line-design1.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: auto 20px;
+	}
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 500px;
@@ -53,7 +72,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Deacon's Personal Site</title>
+  <title>Deacon Mosley</title>
 </head>
 
 <body>
@@ -64,15 +83,15 @@
         <h1>Deacon Mosley</h1>
         <p><em>Information Technology Specialist</em></p>
         <p>
-            I have been a technology enthusiast since I was very young after my
-            parents purchased a Commodore 64. I remember studying and coding in
-            basic for hours and writing my own text-based games.
+            I have been a technology enthusiast since I was very young and my
+            parents puchased a Commodore 64. I remember studying and coding in
+            basic for hours and writing my own text based games.
         </p>
         <p>
-            My passion for problem solving has only increased with time. Currently,
-            I have over a decade of professional IT experience spanning several
-            disciplines, from being the solitary member of an IT environment to a
-		supporting member of a team of many individuals dedicated to a single project.
+            My passion for problem solving has only increased with time. Today,
+            I have over a decade of professional IT experience over several
+            disciplines. I have worked as the solitary member of an IT environment to being
+            a supporting member of a team of many individuals dedicated to a single project.
         </p>
         <p>
             I have a special passion for educating those who struggle
@@ -82,15 +101,26 @@
       </td>
     </tr>
   </table>
+  
+  <br />
 
+  <div id="horizrle1"></div>
+  
+  <br />
 
-  <hr />
   <h3>Education</h3>
   <ul>
     <li>Oklahoma State University - Bachelor of Technology - Information Assurance and forensics</li>
     <li>Oklahoma State University - Associate of Science - Information Technology</li>
     <li>Tulsa Community College - Associate of Art - International Studies (China)</li>
   </ul>
+  
+  <br />
+  
+  <div id="horizrle2"></div>
+  
+  <br />
+  
   <h3>Work Experience</h3>
   <table>
     <thead>
@@ -154,6 +184,12 @@
       <tr>
     </tbody>
   </table>
+  
+  <br />
+  
+   <div id="horizrle2"></div>
+   
+  <br />
 
   <h3>Skills</h3>
 
@@ -206,9 +242,32 @@
       <td>⭐⭐⭐⭐</td>
     </tr>
   </table>
+  
   <br />
+  
+  <div id="horizrle2"></div>
+  
   <br />
-  <h3><a href="./hobbies.html">My Hobbies</a>  <a href="./contactme.html">Contact Me</a></h3>
+  
+  <h3>My Hobbies</h3>
+
+    <ul>
+      <li class="tooltip"><a href="https://deacongallery.wordpress.com/" target="_blank">Amateur Unmanned Aerial Vehicle (UAV) Photography</a>
+		<span class="tooltiptext">
+			I became interested in flying unmanned aerial vehicles (UAV)<br />
+			or drones in 2019.<br />
+			Believe it or not, flying a craft from the ground still contains much of<br />
+			the thrill of actually being on board, but of course with the luxury of <br />
+			no risk if it crashes. I especially love photography and cinematography. <br /> 
+			I love the different view and perspective aerial photography offers. 
+		</span>
+	  </li>
+      <li><a href="https://www.gracieuniversity.com">Martial Arts</a></li>
+      <li><a href="https://www.benpakulski.com/mi40/welcome.php">Bodybuilding</a></li>
+    </ul>
+
+
+  <a href="./contactme.html">Contact Me</a></h3>
 
 </body>
 
